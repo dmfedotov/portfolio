@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Портфолио</title>
+  <title>Обо мне</title>
 </head>
+
 <body>
-  <p>Привет :)</p>
+  <div class="wrapper">
+    <!--Шапка-->
+    <header class="header">
+      <div class="container">
+        <div class="header-info">
+          <div class="header-info-author">
+            <div class="header-info-author__photo">
+              <img src="img/content/min-avatar.jpg" width="60" height="60" alt="Автор портфолио Дмитрий Федотов">
+            </div>
+            <div class="header-info-author__name">
+              Дмитрий Федотов
+            </div>
+          </div>
+        </div>
+        <div class="header-contacts">
+          <a class="header-contacts__author" href="#">Мои контакты</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Контент -->
+    <section class="content">
+      <div class="container">
+        <!--Начало сайдбара-->
+        <aside class="sidebar">
+          <nav class="main-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__about" href="#">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__career" href="#">Карьерный путь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__portfolio" href="#">Портфолио</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!--Конец сайдбара-->
+
+        <!--Основной контент-->
+        <main class="main-content">
+          <div class="author">
+            <div class="author__photo">
+              <div class="author__avatar">
+                <img src="img/content/big-avatar.jpg" alt="Автор портфолио Дмитрий Федотов">
+              </div>
+            </div>
+            <div class="author-info">
+              <h1 class="author-info__title">Обо мне</h1> <!--Думаю, что по БЭМ, h1 должен быть блоком, но не уверен-->
+              <div class="author-info__content">
+                <p class="author-info__text">
+                  Меня зовут Дмитрий. Я родом из маленького городка России Богородска. Однажды я задумался, чем бы хотел заниматься в жизни и вспомнил про такую вещь, как программирование и решил попробовать, тем более с гаджетами я быстро находил язык.
+                </p>
+                <p class="author-info__text">
+                  Начал изучать сразу JavaScript, поначалу даже получалось и я уже думал, что стал крутым разработчиком :) Но я ошибался. Для работы с JS, необходимо было еще знание HTML и CSS. Так я узнал из чего состоит весь интернет и принялся изучать основы.
+                </p>
+                <p class="author-info__text">
+                  Когда учил основы, попутно узнавал, что есть фреймворки и прочие интересные вещи и мне конечно хотелось все это узнать. Переключаясь с одного на другое я не мог сосредоточиться, а из-за плохой дисциплины не мог организовать свое обучение. Потом взял себя в руки и начал все сначала. Проходил видеокурсы, читал книги и в итоге сверстал 2 макета, прогресс был, но медленный и я понимал, что мне нужен тот, кто подскажет и даст нужное направление для развития. Так я записался в школу онлайн обучения LoftSchool.
+                </p>
+                <p class="author-info__text">
+                  В настоящее время я прохожу обучение в школе на курсе "Web для начинающих". Моя цель - получить здесь хорошую базу для дальнейшего роста, освоить современные технологии и завести новых друзей.
+                </p>
+              </div>
+              <div class="author-info__resume">
+                <a class="author-info__download" href="#">Скачать резюме</a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+  </div>
+
+  <!--Подвал-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-info__copy">
+          &copy Дизайн сайта был разработан в школе LoftSchool
+        </div>
+      </div>
+      <div class="footer-media">
+        <ul class="footer-social">
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#"></a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#"></a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
