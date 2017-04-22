@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/layout/normalize.css">
+  <link rel="stylesheet" href="css/layout/fonts.css">
+  <link rel="stylesheet" href="css/layout/adjustment.css">
+  <link rel="stylesheet" href="css/layout/font-awesome.css">
+  <link rel="stylesheet" href="css/sections/header.css">
+  <link rel="stylesheet" href="css/sections/sidebar.css">
+  <link rel="stylesheet" href="css/sections/content.css">
+  <link rel="stylesheet" href="css/sections/footer.css">
+  <link rel="stylesheet" href="css/sections/about.css">
   <title>Обо мне</title>
 </head>
 
 <body>
   <div class="wrapper">
     <!--Шапка-->
-    <header class="header">
+    <header class="header clearfix">
       <div class="container">
 
         <div class="header__left">
           <div class="user">
-            <div class="user__ava">
-              <img class="user__ava-pic" src="img/content/min-avatar.jpg" width="60" height="60" alt="Автор портфолио Дмитрий Федотов">
+            <div class="user__photo">
+              <img class="user__photo-pic" src="img/content/min-avatar.jpg" alt="Автор портфолио Дмитрий Федотов">
             </div>
             <div class="user__name">
               Дмитрий Федотов
@@ -26,27 +35,38 @@
         </div>
 
         <div class="header__right">
-          <a class="contacts" href="#">Мои контакты</a>
+          <div class="contacts">
+            <a class="contacts__link" href="#">Мои контакты</a>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- Контент -->
     <section class="content">
-      <div class="container">
+      <div class="container clearfix">
 
         <!--Начало сайдбара-->
         <aside class="sidebar">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link nav__link_active" href="#">
+                  <i class="fa fa-user-secret nav__link-icon"></i>
+                  <span class="nav__link-title">Обо мне</span>
+                </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Карьерный путь</a>
+                <a class="nav__link" href="career.html">
+                  <i class="fa fa-rocket nav__link-icon"></i>
+                  <span class="nav__link-title">Карьерный путь</span>
+                </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Портфолио</a>
+                <a class="nav__link" href="portfolio.html">
+                  <i class="fa fa-briefcase nav__link-icon"></i>
+                  <span class="nav__link-title">Портфолио</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -55,32 +75,46 @@
 
         <!--Основной контент-->
         <main class="main-content">
-          <div class="about">
+          <div class="about clearfix">
 
             <div class="about__left">
-              <div class="about__avatar">
-                <img class="about__avatar-item" src="img/content/big-avatar.jpg" alt="Автор портфолио Дмитрий Федотов">
+              <div class="about__photo">
+                <img class="about__photo-item" src="img/content/big-avatar.jpg" alt="Автор портфолио Дмитрий Федотов">
               </div>
             </div>
 
             <div class="about__right">
-              <h1 class="content-title">Обо мне</h1>
-              <div class="about-content">
-                <p class="about-content__text">
-                  Меня зовут Дмитрий. Я родом из маленького городка России Богородска. Однажды я задумался, чем бы хотел заниматься в жизни и вспомнил про такую вещь, как программирование и решил попробовать, тем более с гаджетами я быстро находил язык.
-                </p>
-                <p class="about-content__text">
-                  Начал изучать сразу JavaScript, поначалу даже получалось и я уже думал, что стал крутым разработчиком :) Но я ошибался. Для работы с JS, необходимо было еще знание HTML и CSS. Так я узнал из чего состоит весь интернет и принялся изучать основы.
-                </p>
-                <p class="about-content__text">
-                  Когда учил основы, попутно узнавал, что есть фреймворки и прочие интересные вещи и мне конечно хотелось все это узнать. Переключаясь с одного на другое я не мог сосредоточиться, а из-за плохой дисциплины не мог организовать свое обучение. Потом взял себя в руки и начал все сначала. Проходил видеокурсы, читал книги и в итоге сверстал 2 макета, прогресс был, но медленный и я понимал, что мне нужен тот, кто подскажет и даст нужное направление для развития. Так я записался в школу онлайн обучения LoftSchool.
-                </p>
-                <p class="about-content__text">
-                  В настоящее время я прохожу обучение в школе на курсе "Web для начинающих". Моя цель - получить здесь хорошую базу для дальнейшего роста, освоить современные технологии и завести новых друзей.
-                </p>
+              <div class="about__desc">
+                <h1 class="content-title">Обо мне</h1>
+                <div class="about__text">
+                  <p>
+                    Меня зовут Дмитрий. Я родом из маленького городка России Богородска. Однажды я задумался, чем бы хотел заниматься в жизни
+                    и вспомнил про такую вещь, как программирование и решил попробовать, тем более с гаджетами я быстро находил
+                    язык.
+                  </p>
+                  <p>
+                    Начал изучать сразу JavaScript, поначалу даже получалось и я уже думал, что стал крутым разработчиком :) Но я ошибался. Для
+                    работы с JS, необходимо было еще знание HTML и CSS. Так я узнал из чего состоит весь интернет и принялся
+                    изучать основы.
+                  </p>
+                  <p>
+                    Когда учил основы, попутно узнавал, что есть фреймворки и прочие интересные вещи и мне конечно хотелось все это узнать. Переключаясь
+                    с одного на другое я не мог сосредоточиться, а из-за плохой дисциплины не мог организовать свое обучение.
+                    Потом взял себя в руки и начал все сначала. Проходил видеокурсы, читал книги и в итоге сверстал 2 макета,
+                    прогресс был, но медленный и я понимал, что мне нужен тот, кто подскажет и даст нужное направление для
+                    развития. Так я записался в школу онлайн обучения LoftSchool.
+                  </p>
+                  <p>
+                    В настоящее время я прохожу обучение в школе на курсе "Web для начинающих". Моя цель - получить здесь хорошую базу для дальнейшего
+                    роста, освоить современные технологии и завести новых друзей.
+                  </p>
+                </div>
               </div>
               <div class="about__download">
-                <a class="about__download-link" href="#">Скачать резюме</a>
+                <a class="about__download-link" href="#">
+                  <i class="fa fa-download about__download-link-icon"></i>
+                  <span class="about__download-link-text">Скачать резюме</span>
+                </a>
               </div>
             </div>
           </div>
@@ -91,24 +125,24 @@
 
   <!--Подвал-->
   <footer class="footer">
-    <div class="container">
+    <div class="container clearfix">
 
       <div class="footer__left">
-        <div class="copy">
-          &copy Дизайн сайта был разработан в школе LoftSchool
+        <div class="copyright">
+          &copy; Дизайн сайта был разработан в школе LoftSchool
         </div>
       </div>
-      
+
       <div class="footer__right">
-        <ul class="social-list">
+        <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="#"></a>
-          </li>
-          <li class="footer-social__item">
-            <a class="social__link" href="#"></a>
+            <a class="social__link social__link_fb" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"></a>
+            <a class="social__link social__link_tw" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_vk" href="#"></a>
           </li>
         </ul>
       </div>

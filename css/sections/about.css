@@ -1,0 +1,64 @@
+.about__left {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.about__photo {
+  display: inline-block;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about__photo-item {
+  display: block;
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.about__right {
+  float: right;
+  width: 56%;
+}
+
+.about__text {
+  height: 380px;
+  margin-bottom: 50px;
+  font-family: "firasans_light";
+  font-size: 18px;
+  line-height: 26px;
+  color: #414141;
+  overflow: auto;
+}
+
+.about__text p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.about__download {
+  text-align: right;
+}
+
+.about__download-link {
+  display: inline-block;
+  padding: 5px 14px;
+  font-family: "firasans_bold";
+  font-size: 14px;
+  line-height: 28px;
+  color: #e85f61;
+  border: 2px solid #e85f61;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.about__download-link:hover {
+  background: #e85f61;
+  color: #fff;
+}
+
+.about__download-link-icon {
+  margin-right: 5px;
+}

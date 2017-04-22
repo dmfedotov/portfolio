@@ -1,0 +1,15 @@
+.main-content {
+  float: right;
+  width: 73%;
+}
+
+.content-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "firasans_medium";
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 45px;
+  color: #414141;
+}
+

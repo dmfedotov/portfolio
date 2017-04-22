@@ -1,0 +1,27 @@
+.sidebar {
+  float: left;
+  width: 24%;
+}
+
+.nav__list {
+  text-align: right;
+}
+
+.nav__link {
+  display: block;
+  padding: 10px 0;
+  padding-right: 24px;
+  font-size: 18px;
+  color: #414141;
+  border-right: 6px solid transparent;
+}
+
+.nav__link:hover {
+  color: #33c1e3;
+}
+
+.nav__link_active {
+  font-family: "firasans_bold";
+  color: #33c1e3;
+  border-color: #33c1e3;
+}
