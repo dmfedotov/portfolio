@@ -1,0 +1,114 @@
+.career__left {
+  float: left;
+  width: 220px;
+}
+
+.career__pic {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.career__pic-item {
+  display: block;
+  max-width: 100%;
+}
+
+.career__right {
+  float: right;
+  width: 455px;
+}
+
+.career__list {
+  text-align: right;
+}
+
+.career__list-item {
+  display: inline-block;
+  width: 380px;
+  margin-bottom: 20px;
+  color: #727272;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.career__list-item:hover {
+  background: #33c1e3;
+  color: #fff;
+}
+
+.career__block {
+  position: relative;
+  padding: 15px;
+  text-align: left;
+}
+
+.career__block::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #33c1e3;
+}
+
+
+.career__block:hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #94e0f2;
+}
+
+.career__title {
+  margin-bottom: 5px;
+  font-family: "firasans_regular";
+  font-size: 21px;
+  line-height: 26px;
+  color: #5a5a5a;
+}
+
+.career__occ,
+.career__time {
+  font-family: "firasans_light";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.career__year {
+  position: absolute;
+  top: 50%;
+  left: -63px;
+  margin-top: -13px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.career__year::after {
+  content: '';
+  position: absolute;
+  top: 23px;
+  right: -15px;
+  bottom: -110px;
+  display: block;
+  width: 1px;
+  background: #dddddd;
+}

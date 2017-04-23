@@ -9,19 +9,24 @@
   <link rel="stylesheet" href="css/layout/fonts.css">
   <link rel="stylesheet" href="css/layout/adjustment.css">
   <link rel="stylesheet" href="css/layout/font-awesome.css">
+  <link rel="stylesheet" href="css/sections/header.css">
+  <link rel="stylesheet" href="css/sections/sidebar.css">
+  <link rel="stylesheet" href="css/sections/content.css">
+  <link rel="stylesheet" href="css/sections/footer.css">
+  <link rel="stylesheet" href="css/sections/career.css">
   <title>Карьерный путь</title>
 </head>
 
 <body>
   <div class="wrapper">
     <!--Шапка-->
-    <header class="header">
+    <header class="header clearfix">
       <div class="container">
 
         <div class="header__left">
           <div class="user">
             <div class="user__photo">
-              <img class="user__photo-pic" src="img/content/min-avatar.jpg" width="60" height="60" alt="Автор портфолио Дмитрий Федотов">
+              <img class="user__photo-pic" src="img/content/min-avatar.jpg" alt="Автор портфолио Дмитрий Федотов">
             </div>
             <div class="user__name">
               Дмитрий Федотов
@@ -30,32 +35,34 @@
         </div>
 
         <div class="header__right">
-          <a class="contacts" href="#">Мои контакты</a>
+          <div class="contacts">
+            <a class="contacts__link" href="#">Мои контакты</a>
+          </div>
         </div>
       </div>
     </header>
 
     <!--Контент-->
     <section class="content">
-      <div class="container">
+      <div class="container clearfix">
         <aside class="sidebar">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="index.html">
-                  <span class="nav__link-icon"></span>
+                  <i class="fa fa-user-secret nav__link-icon"></i>
                   <span class="nav__link-title">Обо мне</span>
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">
-                  <span class="nav__link-icon"></span>
+                <a class="nav__link nav__link_active" href="career.html">
+                  <i class="fa fa-rocket nav__link-icon"></i>
                   <span class="nav__link-title">Карьерный путь</span>
                 </a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="portfolio.html">
-                  <span class="nav__link-icon"></span>
+                  <i class="fa fa-briefcase nav__link-icon"></i>
                   <span class="nav__link-title">Портфолио</span>
                 </a>
               </li>
@@ -64,7 +71,7 @@
         </aside>
 
         <main class="main-content">
-          <div class="career">
+          <div class="career clearfix">
             <h1 class="content-title">Карьерный путь</h1>
             <div class="career__left">
               <div class="career__pic">
@@ -75,7 +82,7 @@
               <ul class="career__list">
                 <li class="career__list-item">
                   <div class="career__block">
-                    <div class="career__title">ООО "Звезды путешествий"</div>
+                    <div class="career__title">ООО «Звезды путешествий»</div>
                     <div class="career__occ">Системный Администратор</div>
                     <div class="career__time">2015 - по настоящее время</div>
                     <div class="career__year">2016</div>
@@ -99,7 +106,7 @@
                 </li>
                 <li class="career__list-item">
                   <div class="career__block">
-                    <div class="career__title">ООО "Звезды путешествий"</div>
+                    <div class="career__title">ООО «Звезды путешествий»</div>
                     <div class="career__occ">Помощник руководителя группы разработки</div>
                     <div class="career__time">2015 - по настоящее время</div>
                     <div class="career__year">2013</div>
@@ -126,13 +133,13 @@
       <div class="footer__right">
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="#"></a>
+            <a class="social__link social__link_fb" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"></a>
+            <a class="social__link social__link_tw" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"></a>
+            <a class="social__link social__link_vk" href="#"></a>
           </li>
         </ul>
       </div>
