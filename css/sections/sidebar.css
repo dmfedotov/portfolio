@@ -25,3 +25,7 @@
   color: #33c1e3;
   border-color: #33c1e3;
 }
+
+.nav__link-icon {
+  margin-right: 5px;
+}
