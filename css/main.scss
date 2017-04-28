@@ -1,0 +1,23 @@
+//mixins
+@import "helpers/mixins";
+
+// layout setups
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+@import "layout/font-awesome";
+
+// sections
+@import "sections/about";
+@import "sections/career";
+@import "sections/content";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/portfolio";
+@import "sections/sidebar";
+
+//media
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

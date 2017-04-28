@@ -1,3 +1,7 @@
+.about {
+  @extend %clearfix;
+}
+
 .about__left {
   float: left;
   width: 320px;
@@ -16,7 +20,7 @@
 .about__photo-item {
   display: block;
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 .about__right {
@@ -27,9 +31,7 @@
 .about__text {
   height: 380px;
   margin-bottom: 50px;
-  font-family: "firasans_light";
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 300;
   color: #414141;
   overflow: auto;
 }
@@ -43,24 +45,28 @@
   text-align: right;
 }
 
-.about__download-link {
-  display: inline-block;
-  padding: 5px 14px;
-  font-family: "firasans_bold";
+.btn {
+  padding: 7px 13px;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 28px;
   color: #e85f61;
   border: 2px solid #e85f61;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
-.about__download-link:hover {
+.btn:hover {
   background: #e85f61;
   color: #fff;
 }
 
-.about__download-link-icon {
-  margin-right: 5px;
+.btn__icon,
+.btn__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn__text {
+  margin-left: 8px;
 }

@@ -44,10 +44,18 @@
   margin-top: 35px;
 }
 
+.contacts__icon {
+  display: none;
+}
+
 .contacts__link {
-  font-family: "firasans_bold", serif;
-  font-size: 18px;
+  font-weight: 600;
   line-height: 28px;
   color: #32c3e5;
-  background: url("../../img/decor/border-bottom.png") repeat-x 0 bottom;
+  background: url("../img/decor/border-bottom.png") repeat-x 0 bottom;
+
+  &:hover {
+    background: url("../img/decor/border-hover.png") repeat-x 0 bottom;
+    color: #e85f61;
+  }
 }

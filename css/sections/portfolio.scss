@@ -43,14 +43,12 @@
 }
 
 .works__title {
-  margin: 0;
   font-size: 21px;
-  font-weight: normal;
   color: #33c1e3;
 }
 
 .works__about {
-  font-family: "firasans_light";
+  font-weight: 300;
   font-size: 14px;
   color: #414141;
   margin-bottom: 11px;
@@ -74,7 +72,7 @@
 .works__type-name {
   max-width: 160px;
   margin-left: 5px;
-  font-family: "firasans_bold";
+  font-weight: 600;
   font-size: 14px;
 }
 

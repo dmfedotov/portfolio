@@ -1,0 +1,117 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+
+  .wrapper::after {
+    content: "";
+    display: block;
+    height: 94px;
+  }
+
+  .header__left {
+    width: 70%;
+  }
+
+  .header__right {
+    width: 30%;
+    font-size: 0;
+  }
+
+  .footer {
+    height: 94px;
+    margin-top: -94px;
+  }
+
+  .footer__left,
+  .footer__right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  // Стили главной страницы
+  .contacts {
+    margin-top: 25px;
+  }
+
+  .contacts__link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/icons/phone.png") no-repeat 0 0;
+
+    &:hover {
+      background: url("../img/icons/phone-hover.png") no-repeat 0 0;
+    }
+  }
+
+  .content-title {
+    text-align: center;
+  }
+
+  .about__left,
+  .about__right {
+    width: 100%;
+  }
+
+  .about__text {
+    height: 365px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .about__download {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  // Стили карьеры
+  .career__left,
+  .career__right {
+    float: none;
+    width: 100%;
+  }
+
+  .career__left {
+    margin-bottom: 20px;
+  }
+
+  .career__pic {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .career__pic-item {
+    height: auto;
+  }
+
+  .career__list-item {
+    padding: 0;
+  }
+
+  .career__block {
+    width: 100%;
+  }
+
+  .career__block:before,
+  .career__block:after {
+    content: normal;
+  }
+
+  .career__year {
+    display: none;
+  }
+
+  // Стили портфолио
+  .works__item {
+    width: 230px;
+  }
+
+  .works__pic-item {
+    width: 100%;
+  }
+}
