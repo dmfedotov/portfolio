@@ -9,6 +9,10 @@
     margin-bottom: 40px;
   }
 
+  .content-title {
+    margin-bottom: 15px;
+  }
+
   .main-content {
     float: none;
     width: 100%;
@@ -32,23 +36,33 @@
   }
 
   .about__left {
-    width: 35%;
+    width: 30%;
   }
 
   .about__photo {
-    width: 170px;
-    height: 170px;
+    width: 165px;
+    height: 165px;
   }
 
   .about__right {
-    width: 65%;
+    width: 70%;
   }
 
   .about__text {
     height: 477px;
   }
 
-  .about__download {
-    margin-bottom: 50px;
+  // Стили портфолио
+  .works__item {
+    width: 228px;
+    margin-bottom: 22px;
+  }
+
+  .works__pic-item {
+    width: 100%;
+  }
+
+  .works__desc {
+    padding-bottom: 19px;
   }
 }

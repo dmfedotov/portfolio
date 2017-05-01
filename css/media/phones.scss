@@ -3,8 +3,8 @@
     width: 95%;
   }
 
-  .wrapper::after {
-    height: 114px;
+  .header {
+    margin-bottom: 17px;
   }
 
   .user__name {
@@ -24,9 +24,21 @@
     display: none;
   }
 
+  .sidebar {
+    margin-bottom: 20px;
+  }
+
+  .content-title {
+    margin-bottom: 0;
+  }
+
   .footer {
     height: 114px;
     margin-top: -114px;
+  }
+
+  .wrapper::after {
+    height: 114px;
   }
 
   .copyright {
@@ -36,6 +48,11 @@
   }
 
   //Стили главной страницы
+  .about__photo {
+    width: 140px;
+    height: 140px;
+  }
+  
   .about__text {
     margin-bottom: 20px;
   }
@@ -44,9 +61,28 @@
     margin-bottom: 30px;
   }
 
+  // Стили карьеры 
+  .career__title {
+    font-size: 18px;
+  }
+
+  .career__occ,
+  .career__time {
+    font-size: 16px;
+  }
+
   //Стили портфолио
   .works {
     margin: 0;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__about,
+    &__type {
+      font-size: 16px;
+    }
   }
 
   .works__item {

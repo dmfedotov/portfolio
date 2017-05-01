@@ -4,8 +4,6 @@
   }
 
   .wrapper::after {
-    content: "";
-    display: block;
     height: 94px;
   }
 
@@ -31,8 +29,8 @@
   }
   
   // Стили главной страницы
-  .contacts {
-    margin-top: 25px;
+  .header__right {
+    padding-top: 25px;
   }
 
   .contacts__link {
@@ -61,12 +59,7 @@
     padding: 0 20px;
   }
   .about__download {
-    margin-bottom: 50px;
     text-align: center;
-  }
-
-  .btn {
-    display: inline-block;
   }
 
   // Стили карьеры
@@ -94,12 +87,13 @@
   }
 
   .career__block {
+    display: block;
     width: 100%;
-  }
-
-  .career__block:before,
-  .career__block:after {
-    content: normal;
+    
+    &:after,
+    &:before {
+      display: none;
+    }
   }
 
   .career__year {
@@ -109,9 +103,5 @@
   // Стили портфолио
   .works__item {
     width: 230px;
-  }
-
-  .works__pic-item {
-    width: 100%;
   }
 }
