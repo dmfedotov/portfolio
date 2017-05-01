@@ -70,10 +70,12 @@
 }
 
 .works__type-name {
-  max-width: 160px;
+  display: inline-block;
+  width: 150px;
   margin-left: 5px;
   font-weight: 600;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 
