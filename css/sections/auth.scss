@@ -1,0 +1,101 @@
+.wrapper_hello-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background: url("../img/bg/pattern.jpg");
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.auth {
+  display: inline-block;
+  width: 300px;
+  margin-top: 70px;
+  vertical-align: middle;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  animation: bounceIn .75s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.auth__top {
+  position: relative;
+  padding: 80px 76px 16px;
+  border-radius: 10px 10px 0 0;
+  font-size: 21px;
+  background: #fff;
+}
+
+.auth__avatar {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin-left: -70px;
+  background-image: url("../img/content/min-avatar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #d3d3d3; 
+  border-radius: 50%;
+}
+
+.auth__bottom {
+  padding: 20px 80px;
+  border-radius: 0 0 10px 10px;
+  background: #33c1e3;
+}
+
+.btn_white {
+  color: #fff;
+  border-color: #fff;
+
+  &:hover {
+    color: #33c1e3;
+    background: #fff;
+  }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

@@ -3,6 +3,36 @@
     width: 750px;
   }
 
+  .contacts {
+    &:hover {
+      .contacts-dropdown {
+        left: 0;
+      }
+    }
+  }
+
+  .auth {
+    width: 353px;
+
+    &__top {
+      height: 56px;
+      padding-top: 70px;
+      padding-bottom: 14px;
+    }
+
+    &__avatar {
+      top: -50px;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
+
+    &__name {
+      display: inline-block;
+      width: 145px;
+    }
+  }
+
   .sidebar {
     float: none;
     width: 100%;

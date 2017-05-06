@@ -8,13 +8,14 @@
 @import "layout/font-awesome";
 
 // sections
+@import "sections/header";
+@import "sections/content";
+@import "sections/sidebar";
+@import "sections/auth";
 @import "sections/about";
 @import "sections/career";
-@import "sections/content";
-@import "sections/footer";
-@import "sections/header";
 @import "sections/portfolio";
-@import "sections/sidebar";
+@import "sections/footer";
 
 //media
 @import "media/desktop";

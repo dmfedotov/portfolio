@@ -16,6 +16,18 @@
     font-size: 0;
   }
 
+  .contacts {
+    &:hover {
+      .contacts-dropdown {
+        left: -100px;
+      }
+    }
+  }
+
+  .contacts-dropdown {
+    font-size: 18px;
+  }
+
   .footer {
     height: 94px;
     margin-top: -94px;
@@ -33,15 +45,19 @@
     padding-top: 25px;
   }
 
+  .contacts {
+    &:hover {
+      .contacts__link {
+        background: url("../img/icons/phone-hover.png") no-repeat 0 0;
+      }
+    }
+  }
+
   .contacts__link {
     display: inline-block;
     width: 32px;
     height: 32px;
     background: url("../img/icons/phone.png") no-repeat 0 0;
-
-    &:hover {
-      background: url("../img/icons/phone-hover.png") no-repeat 0 0;
-    }
   }
 
   .content-title {

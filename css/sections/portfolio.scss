@@ -19,6 +19,7 @@
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
   vertical-align: top;
   overflow: hidden;
+  transition: all .3s;
 }
 
 .works__item:hover {
@@ -27,6 +28,7 @@
 
 .works__link {
   display: block;
+  transition: all .3s;
 }
 
 .works__link:hover .works__title_hover {
