@@ -1,6 +1,8 @@
 @media screen and (max-width: 480px) {
   .container {
     width: 95%;
+    min-width: 320px;
+    padding: 0 2.5%;
   }
 
   .auth {
@@ -9,6 +11,14 @@
 
   .header {
     margin-bottom: 17px;
+  }
+
+  .sidebar_portfolio_margin {
+    margin-bottom: 32px;
+  }
+
+  .footer {
+    min-width: 320px;
   }
 
   .user__name {
@@ -28,10 +38,6 @@
     display: none;
   }
 
-  .sidebar {
-    margin-bottom: 20px;
-  }
-
   .content-title {
     margin-bottom: 0;
   }
@@ -41,8 +47,12 @@
     margin-top: -114px;
   }
 
-  .wrapper::after {
-    height: 114px;
+  .wrapper {
+    min-width: 320px;
+
+    &:after {
+      height: 114px;
+    }
   }
 
   .copyright {
@@ -76,6 +86,10 @@
   }
 
   //Стили портфолио
+  .content-title_phone_margin {
+    margin-bottom: 19px;
+  }
+
   .works {
     margin: 0;
 
