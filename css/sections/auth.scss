@@ -24,7 +24,6 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-  animation: bounceIn .75s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
 
 .auth__top {
@@ -68,9 +67,6 @@
 }
 
 @keyframes bounceIn {
-  from, 20%, 40%, 60%, 80%, to {
-    
-  }
 
   0% {
     opacity: 0;
@@ -98,4 +94,8 @@
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
+}
+
+.bounce {
+  animation: bounceIn .75s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
